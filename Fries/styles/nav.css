@@ -1,0 +1,122 @@
+
+.left-column {
+    display: flex;
+    align-items: center;
+}
+
+.left-column > .icon {
+    color: white;
+    margin-right: 15px;
+}
+
+.left-column > .icon i {
+    font-size: 2em;
+}
+
+.left-column > .operation-hours-wrapper {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 200px;
+}
+
+.left-column > .operation-hours-wrapper > .hours {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #ababab;
+    font-size: 0.8em;
+}
+
+.navigation-wrapper > .center-column > .nav-links > .nav-link a {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navigation-wrapper > .center-column > .nav-links > .nav-link a:hover {
+    letter-spacing: 0.3ch;
+    color: goldenrod;
+}
+
+.navigation-wrapper > .center-column > .nav-links > .nav-link {
+    /* this is to avoid pushing the links when hover */
+    width: 70px;
+    /* this is to center text in the 70px container */
+    text-align: center;
+    /* this is to spread the links a bit further apart from each other */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.navigation-wrapper {
+    height: 297px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    display: flex;
+    /* content in flex is take up full space horizontaly with spaces between */
+    justify-content: space-between;
+    /* align content to center vertically     */
+    align-items: center;
+    /* top-bottom left-right */
+    padding: 0px 60px;
+}
+
+.navigation-wrapper > .center-column {
+    /* this is to make the logo and links appear in a column */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+}
+
+.navigation-wrapper > .center-column > .nav-links {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.operation-hours-wrapper {
+    color:royalblue;
+}
+
+.right-column {
+    display: flex;
+}
+
+.right-column > .contact-icon {
+    font-size: xx-large;
+    margin-left: 10px;
+}
+
+.right-column > .contact-icon i {
+    color: white;
+}
+
+.right-column > .address-wrapper {
+    width: 200px;
+    text-align: right;
+}
+
+.right-column > .address-wrapper a {
+    color: gray;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.right-column > .address-wrapper a:hover {
+    color:goldenrod;
+    letter-spacing: 1px;
+}
+
+.navigation-wrapper > .center-column > .banner-image img {
+    /* set size of the logo image */
+    height: 100%;
+    width: 216px;
+}
+
+.navigation-wrapper > .center-column >.banner-image {
+    /* center the logo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

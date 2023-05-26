@@ -1,0 +1,91 @@
+.skewed-header {
+
+}
+
+.skewed-header > .skewed-image {
+    background-image: url("../images/backgrounds/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    /* to let the menu items drawn on top */
+    position: relative;
+    /* skew image (rotate at origin top-left) */
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    /* apply filter to make it darker */
+    filter: brightness(50%);
+}
+
+.skewed-header > .menu {
+    display: flex;
+    justify-content: center;
+}
+
+.skewed-header > .menu > .skewed-wrapper {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.skewed-header > .menu > .skewed-wrapper > .nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 220px;
+}
+
+.skewed-header > .menu > .skewed-wrapper > .nav-links > .nav-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.skewed-header > .menu > .skewed-wrapper > .logo {
+    margin-top: 20px;
+    margin-right: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: orange;
+}
+
+.content-page {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 1000px;
+    grid-gap: 100px;
+}
+
+.company-meta-data-sidebar-wrapper > .logo img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.company-meta-data-sidebar-wrapper > .company-details-wrapper {
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 900;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.company-meta-data-sidebar-wrapper > .company-details-wrapper i {
+    color: goldenrod;
+}
+
+.company-meta-data-sidebar-wrapper > .company-details-wrapper > .item {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.company-meta-data-sidebar-wrapper > .company-details-wrapper > .item :nth-child(2) {
+    margin-left: 15px;
+}

@@ -1,0 +1,92 @@
+
+.skewed-header {
+
+}
+
+.skewed-header > .skewed-image {
+    background-image: url("../images/backgrounds/menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    /* to let the menu items drawn on top */
+    position: relative;
+    /* skew image (rotate at origin top-left) */
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    /* apply filter to make it darker */
+    filter: brightness(50%);
+}
+
+.skewed-header > .menu {
+    display: flex;
+    justify-content: center;
+}
+
+.skewed-header > .menu > .skewed-wrapper {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.skewed-header > .menu > .skewed-wrapper > .nav-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 220px;
+}
+
+.skewed-header > .menu > .skewed-wrapper > .nav-links > .nav-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.skewed-header > .menu > .skewed-wrapper > .logo {
+    margin-top: 20px;
+    margin-right: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: orange;
+}
+
+/* square grid styles */
+
+.squares-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.squares-wrapper > .squares {
+    width: 1000px;
+}
+
+.squares-wrapper > .squares > .square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -4px;
+}
+
+.square > .image-wrapper img {
+    width: 100%;
+    height: 500px;
+    /* this is to crop the image to fit the container */
+    object-fit: cover;
+}
+
+.square > .square-text-wrapper {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    align-items: center;
+    /* to sort items in to a column */
+    flex-direction: column;
+}
+
+.square > .square-text-wrapper a {
+    text-decoration: none;
+    outline: none;
+}
+
+.square > .square-text-wrapper h1 {
+    color: #cea135;
+}

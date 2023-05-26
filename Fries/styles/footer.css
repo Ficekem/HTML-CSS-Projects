@@ -1,0 +1,75 @@
+.footer {
+    background-color: #11122b;
+    color: goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* to stack items vertically on top of each other */
+    flex-direction: column;
+}
+
+.footer > .banner-image img {
+    /* set size of the logo image */
+    height: 100%;
+    width: 216px;
+}
+
+.footer > .details > .phone {
+    margin-right: 20px;
+}
+
+.footer > .details > .hours {
+    margin-left: 20px;
+}
+
+.footer > .nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer > .nav-links > .link {
+    width: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    align-content: center;
+    text-align: center;
+}
+
+.footer > .nav-links > .link a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer > .nav-links > .link a:hover {
+    letter-spacing: 0.9px;
+    color: goldenrod;
+}
+
+.footer > .share > .share-wrapper {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 100px;
+    scale: 2;
+}
+
+.footer > .share > .share-wrapper a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer > .share > .share-wrapper a:hover {
+    color: goldenrod;
+    scale: 1.2;
+}
+
+
+.footer > .signature {
+    color: white;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}

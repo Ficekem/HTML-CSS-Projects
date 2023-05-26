@@ -1,0 +1,72 @@
+
+/* make parallax scrolling */
+.background-section {
+    background-image: url(../images/backgrounds/fries-hero-bg.jpg);
+    padding: 100px;
+    height: 300px;
+    /* this is so the background does not move, this is all we need really */
+    background-attachment: fixed;
+    /* this is only to position the background */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.background-section > .section1 {
+    background-color: blue;
+    padding: 10px;
+    margin-bottom: 50px;
+    max-width: 340px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.background-section > .section2 {
+    background-color: goldenrod;
+    max-width: 180px;
+    text-align: center;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.features-section {
+    border-top: 10px solid white;
+
+}
+
+.features-section > .column-wrapper {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/backgrounds/fries-multiply-bg.jpg");
+    height: 220px;
+    box-shadow: inset 0px -20px 40px -8px rgba(0, 0, 0, 0.58);
+}
+
+.features-section > .column-wrapper > .section {
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    transition: 0.5s;
+    border-radius: 25px;
+    border-bottom: 5px solid transparent;
+}
+
+
+.features-section > .column-wrapper > .section:hover {
+    letter-spacing: 0.5px;
+    border-color: black;
+}
+
+
+.features-section > .column-wrapper > .section i {
+    font-size: 2em;
+}
+
+.features-section > .column-wrapper > .section > .title {
+    font-weight: bold;
+    font-size: large;
+}
